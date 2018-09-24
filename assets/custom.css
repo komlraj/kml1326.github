@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+}
+
+/*  =================================================
+            Base 
+    =================================================  */
+.container {
+	width: 70%;
+	margin : 0 auto;
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 .5rem;
+}
+a {
+	text-decoration: none;
+}
+h2 {
+	text-align: center;
+	margin: 40px 0;
+	font-size: 2rem;
+}
+.sub-heading {
+    font-size: 1.4rem;
+    margin-top: 4rem;
+    color: #201E1E;
+}
+
+/*  =================================================
+            Header
+    =================================================  */
+
+.header, .footer {
+	background: #39a366;
+}
+.header {
+	padding: 2rem 0;
+	color: white;
+	vertical-align: middle;
+}
+.header-user-name {
+	font-size: 2.5rem;
+	letter-spacing: .15rem;
+	word-spacing: .2rem;
+}
+.nav-bar {
+	padding-top: 10px;
+	float: right;
+	font-size: 20px;
+}
+.nav-bar li a {
+	color: white;
+	padding: 0 5px;
+}
+.fa-bars {
+  display: none;
+}
+#toggle {
+  float: right;
+  margin-top: 10px;
+  display: none;
+}
+.nav-bar a:hover {
+  color: #ffd107;
+}
+
+/*  =================================================
+            Home page
+    =================================================  */
+
+.home-main {
+	background: url("media/home/home.jpg") center no-repeat;
+	height: 48vh;
+}
+.home-logos {
+	padding: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.logo {
+	font-size: 26px;
+	padding-bottom: 23px;
+	color: #325b46;
+}
+.logo-name a {
+	font-size: 28px;
+	font-weight: 700;
+	color: #325b46;
+}
+.home-table {
+	width: 65%;
+	margin: 0 auto;
+}
+.logo-item {
+  text-align: center;
+}
+.logo-item a:hover {
+  color: #39a366;
+}
+.logo-item i:hover {
+  transform: scale(1.2);
+  transition: transform .5s;
+}
+
+/*  =================================================
+            About Me
+    =================================================  */
+
+.about-img {
+	text-align: center;
+	height: 200px;
+	width: 200px;
+	margin: 0 auto;
+}
+.img {
+	text-align: center;
+}
+.about_para {
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  margin: 30px 0;
+}
+.fa-graduation-cap,
+.fa-edit {
+  color: #2B2828;
+  font-size: 30px;
+  border: none;
+}
+.education_detail {
+	display: flex;
+	justify-content: space-around;
+}
+.list {
+	display: block;
+	padding: .5rem 0;
+	line-height: 1.4rem;
+}
+.education__session {
+  padding: 10px 20px;
+}
+.education__session .list {
+  border: none;
+}
+.date {
+  font-size: 14px;
+  color: #454343;
+}
+.campus {
+  font-size: 1.25rem;
+}
+.place {
+  font-size: 14px;
+}
+.skill {
+  margin: 20px 0;
+}
+.skill-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.sub-skill-list {
+    line-height: 2rem;
+}
+.bar {
+  vertical-align: middle;
+  background: green;
+  height: 15px;
+  width: 200px;
+}
+
+/*  =================================================
+            Work
+    =================================================  */
+
+.work-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px; 
+  margin-bottom: 60px;
+}
+.work_album {
+  padding:2px;
+  background:rgba(192, 242,255,0.2);
+  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+}
+.work__image {
+  height:25rem;
+  width:100%;
+}
+.work_album__details {
+  margin-left: 20px;
+}
+.image__type {
+  font-weight: 500;
+  font-size: 18px;
+}
+.album__desc {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #454343;
+}
+.work__link {
+  font-size: 13px;
+}
+
+/*  =================================================
+            Work
+    =================================================  */
+
+.blog {
+  height: 72.5vh;
+}
+
+/*  =================================================
+            contact
+    =================================================  */
+
+
+.contact-form_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 2.5rem;
+}
+.contact_add {
+  line-height: 1.5rem;
+}
+.add__contact {
+  margin-top: 30px;
+  line-height: 1.8rem;
+  word-spacing: .5rem;
+}
+.input_box {
+  display: block;
+  width: 100%;
+  border: none;
+  resize: none;
+  background-color: rgba(191,252,224,.3);
+  padding: 1rem;
+  margin: 5px 0;
+  border-bottom: 2px solid #03c66d;
+}
+.message_box {
+  height: 150px;
+}
+.input_box::placeholder {
+  font-size: 1rem;
+  color: #2B2828;
+}
+.btn {
+  background: #2B2828;
+  color: #CBC4C4;
+  padding: .5rem 1.4rem;
+  margin-top: 1rem;
+  border:none;
+  border-radius: 2rem;
+  box-shadow: 1px .5px 3px 2px white;
+}
+.btn:hover {
+  background-color: rgba(0,0,0,.7);
+  color: white;
+  box-shadow: 1px 1px 5px 3px white;
+  transition: box-shadow 300ms ease-in-out;
+}
+.locator {
+  margin: 60px 0;
+}
+
+.follow-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px 0;
+}
+.follow {
+  font-size: 1.5rem;
+  color: #325b46;
+}
+.follow-menu .logo {
+  margin: 0;
+  border: none;
+  font-size: 2rem;
+  padding: 0 .5rem;
+}
+
+
+
+
+
+
+
+/*  =================================================
+            Footer
+    =================================================  */
+
+.footer {
+	padding: 1.7rem 0;
+}
+.foot-nav-bar {
+  float: right;
+  font-size: 25px;
+}
+.foot-logo {
+  color: white;
+}
+.foot-nav-bar i:hover{
+  transform: scale(1.2);
+  transition: transform .5s;
+}
+
+
+/*  ================================
+    media query
+    ================================  */
+
+@media (min-width: 2500px) {
+  .wrapper{
+    max-width: 2400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-list{
+      display: none;
+    }
+    .fa-bars{
+      display: block;
+    }
+    #toggle{
+      display: block;
+    }
+    .nav-bar > input[type="checkbox"]:checked ~ .menu-list{
+      display: block;
+    }
+    .menu-list li{
+      display: block;
+      width: 200px;
+      padding: 8px;
+      background: #39a366;
+      border-bottom: .5px solid white;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+  .logo-item{
+    width: 180px;
+    margin-top: 40px;
+  }
+  .logo{
+    padding-bottom: 15px;
+  }
+ }

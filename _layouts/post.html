@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/custom.css">
+</head>
+<body>
+
+  <!-- START HEADER -->
+	<header class="header wrapper">
+		<div class="container">
+			<span class="header-user-name">Komal Raj</span>
+			<nav class="nav-bar">
+        <label for="toggle">
+        <i class="fa fa-bars"></i></label>
+        <input type="checkbox" id="toggle" />
+				<ul class="menu-list">
+					<li><a href="./index.html">home</a></li>
+					<li><a href="./about-me.html">about me</a></li>
+					<li><a href="./work.html">work</a></li>
+					<li><a href="./blog.html">blog</a></li>
+					<li><a href="./contact.html">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+  <!-- MAIN SECTION -->
+	<main class="container wrapper">
+		<h2 class="heading">Blog posts</h2>
+      <h1>{{ page.title }}</h1>
+      {{ page.content }}
+  </main>
+  <!-- START FOOTER -->
+	<footer class="footer wrapper">
+    <div class="container">
+      <span>
+        <small>&copy; 2018 by komat raj</small>
+      </span>
+      <nav class="foot-nav-bar">
+        <ul>
+          <li><a href="https://github.com/kml1326">
+            <i class="fab fa-github-square foot-logo"></i>
+          </a></li>
+          <li><a href="https://www.facebook.com/komal.raj13">
+            <i class="fab fa-facebook foot-logo"></i>
+          </a></li>
+          <li><a href="https://twitter.com/kml_1326">
+            <i class="fab fa-twitter foot-logo"></i>
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

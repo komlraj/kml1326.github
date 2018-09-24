@@ -26,6 +26,7 @@ github_username:  kml1326
 
 # Build settings
 markdown: kramdown
+permalink: /blog/:title
 theme: minima
 plugins:
   - jekyll-feed
