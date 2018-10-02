@@ -31,22 +31,22 @@ body {
             Base 
     =================================================  */
 .container {
-	width: 70%;
-	margin : 0 auto;
+  width: 70%;
+  margin : 0 auto;
 }
 
 li {
-	list-style-type: none;
-	display: inline-block;
-	margin: 0 .5rem;
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 .5rem;
 }
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 h2 {
-	text-align: center;
-	margin: 40px 0;
-	font-size: 2rem;
+  text-align: center;
+  margin: 40px 0;
+  font-size: 2rem;
 }
 .sub-heading {
     font-size: 1.4rem;
@@ -59,26 +59,26 @@ h2 {
     =================================================  */
 
 .header, .footer {
-	background: #39a366;
+  background: #39a366;
 }
 .header {
-	padding: 2rem 0;
-	color: white;
-	vertical-align: middle;
+  padding: 2rem 0;
+  color: white;
+  vertical-align: middle;
 }
 .header-user-name {
-	font-size: 2.5rem;
-	letter-spacing: .15rem;
-	word-spacing: .2rem;
+  font-size: 2.5rem;
+  letter-spacing: .15rem;
+  word-spacing: .2rem;
 }
 .nav-bar {
-	padding-top: 10px;
-	float: right;
-	font-size: 20px;
+  padding-top: 10px;
+  float: right;
+  font-size: 20px;
 }
 .nav-bar li a {
-	color: white;
-	padding: 0 5px;
+  color: white;
+  padding: 0 5px;
 }
 .fa-bars {
   display: none;
@@ -97,28 +97,28 @@ h2 {
     =================================================  */
 
 .home-main {
-	background: url("media/home/index.jpg") center no-repeat;
-	height: 48vh;
+  background: url("media/home/home.jpg") center no-repeat;
+  height: 48vh;
 }
 .home-logos {
-	padding: 3rem 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 .logo {
-	font-size: 26px;
-	padding-bottom: 23px;
-	color: #325b46;
+  font-size: 26px;
+  padding-bottom: 23px;
+  color: #325b46;
 }
 .logo-name a {
-	font-size: 28px;
-	font-weight: 700;
-	color: #325b46;
+  font-size: 28px;
+  font-weight: 700;
+  color: #325b46;
 }
 .home-table {
-	width: 65%;
-	margin: 0 auto;
+  width: 65%;
+  margin: 0 auto;
 }
 .logo-item {
   text-align: center;
@@ -136,13 +136,13 @@ h2 {
     =================================================  */
 
 .about-img {
-	text-align: center;
-	height: 200px;
-	width: 200px;
-	margin: 0 auto;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
 }
 .img {
-	text-align: center;
+  text-align: center;
 }
 .about_para {
   line-height: 1.8rem;
@@ -157,13 +157,12 @@ h2 {
   border: none;
 }
 .education_detail {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 .list {
-	display: block;
-	padding: .5rem 0;
-	line-height: 1.4rem;
+  padding: .5rem 0;
+  line-height: 1.4rem;
 }
 .education__session {
   padding: 10px 20px;
@@ -235,7 +234,7 @@ h2 {
 }
 
 /*  =================================================
-            Work
+            Blog
     =================================================  */
 
 .blog {
@@ -312,8 +311,10 @@ h2 {
   font-size: 2rem;
   padding: 0 .5rem;
 }
-
-
+.about-nav-list i:hover {
+  transform: scale(1.2);
+  transition: transform .5s;
+}
 
 
 
@@ -324,7 +325,7 @@ h2 {
     =================================================  */
 
 .footer {
-	padding: 1.7rem 0;
+  padding: 1.7rem 0;
 }
 .foot-nav-bar {
   float: right;
@@ -374,7 +375,6 @@ h2 {
 }
 
 @media screen and (max-width: 760px) {
-
   .logo-item{
     width: 180px;
     margin-top: 40px;
@@ -382,4 +382,27 @@ h2 {
   .logo{
     padding-bottom: 15px;
   }
- }
+  .education_detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .work-gallery,
+  .follow-menu,
+  .contact-form_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .follow-menu {
+    grid-gap : 30px;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
