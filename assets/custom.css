@@ -25,6 +25,7 @@ time, mark, audio, video {
 }
 body {
     font-size: 14px;
+    font-family: sans-serif;
 }
 
 /*  =================================================
@@ -53,13 +54,18 @@ h2 {
     margin-top: 4rem;
     color: #201E1E;
 }
+.logo {
+  font-size: 26px;
+  padding-bottom: 23px;
+  color: #fff;
+}
 
 /*  =================================================
             Header
     =================================================  */
 
 .header, .footer {
-  background: #39a366;
+  background: #3b2148;
 }
 .header {
   padding: 2rem 0;
@@ -70,15 +76,26 @@ h2 {
   font-size: 2.5rem;
   letter-spacing: .15rem;
   word-spacing: .2rem;
+  cursor: pointer;
+}
+.header-user-name a {
+  color: white;
+}
+.header-user-name a:hover {
+  color: rgba(224, 222, 193, 0.8);
 }
 .nav-bar {
   padding-top: 10px;
   float: right;
   font-size: 20px;
 }
+.nav-bar i {
+  cursor: pointer;
+}
 .nav-bar li a {
   color: white;
   padding: 0 5px;
+  text-transform: capitalize;
 }
 .fa-bars {
   display: none;
@@ -91,44 +108,72 @@ h2 {
 .nav-bar a:hover {
   color: #ffd107;
 }
-
+#active {
+  color: #eeb928;
+  text-decoration-line: underline;
+}
+.home-header {
+  height: 13.6vh;
+  background: #3b2148;
+}
 /*  =================================================
             Home page
     =================================================  */
 
-.home-main {
-  background: url("media/home/index.jpg") center no-repeat;
-  height: 48vh;
+.bg-img {
+  height: 80vh;
+  background: url("media/home/kml.jpg") center no-repeat;
+  background-size: cover;
 }
-.home-logos {
-  padding: 3rem 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.home-hero {
+  position: relative;
+  height: 80vh;
+  background: #281e2e;
+  opacity: 0.4;
 }
-.logo {
-  font-size: 26px;
-  padding-bottom: 23px;
-  color: #325b46;
-}
-.logo-name a {
-  font-size: 28px;
-  font-weight: 700;
-  color: #325b46;
-}
-.home-table {
-  width: 65%;
-  margin: 0 auto;
-}
-.logo-item {
+.home-data {
+  color: rgb(255, 255, 255);
+  display : inline-block;
+  padding-top: 100px;
+  padding-left: 40px;
+  width: 600px;
   text-align: center;
 }
-.logo-item a:hover {
-  color: #39a366;
+.home-user-name {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: .15rem;
 }
-.logo-item i:hover {
-  transform: scale(1.2);
-  transition: transform .5s;
+.home-para {
+  margin-top: 20px;
+  line-height: 2.2rem;
+  font-size: 2rem;
+}
+
+ /* copy */
+
+ .myCanvas {
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+}
+.home-hero-copy {
+  position: relative;
+  height: 80vh;
+  background: #e8e3eb;
+}
+.home-img-kml {
+  display: inline-block;
+  float: right;
+  margin-top : 80px;
+  margin-right: 100px;
+}
+.home-img-kml img {
+  height: 300px;
+  border-radius: 50%;
+}
+.home-data-copy {
+  color: #76569b;
 }
 
 /*  =================================================
@@ -193,10 +238,11 @@ h2 {
 }
 .bar {
   vertical-align: middle;
-  background: green;
+  background:#3c0080;
   height: 15px;
   width: 200px;
 }
+.bar::-webkit-progress-value {background: #3c0080; }
 
 /*  =================================================
             Work
@@ -211,7 +257,11 @@ h2 {
 .work_album {
   padding:2px;
   background:rgba(192, 242,255,0.2);
-  box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+  box-shadow:1px 1px 5px 0 black;
+}
+.work_album:hover .work__image{
+  transform: scale(1.05);
+  transition: transform 1.5s ease-in-out ;
 }
 .work__image {
   height:25rem;
@@ -264,10 +314,10 @@ h2 {
   width: 100%;
   border: none;
   resize: none;
-  background-color: rgba(191,252,224,.3);
+  background-color: transparent;
   padding: 1rem;
   margin: 5px 0;
-  border-bottom: 2px solid #03c66d;
+  border-bottom: 2px solid #8157ba;
 }
 .message_box {
   height: 150px;
@@ -277,16 +327,17 @@ h2 {
   color: #2B2828;
 }
 .btn {
-  background: #2B2828;
-  color: #CBC4C4;
+  background: #fff;
+  font-weight: 800;
+  color: #2a0e54;
   padding: .5rem 1.4rem;
   margin-top: 1rem;
-  border:none;
+  border:1px solid rgb(61, 9, 95);
   border-radius: 2rem;
   box-shadow: 1px .5px 3px 2px white;
 }
 .btn:hover {
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(50, 12, 94, 0.7);
   color: white;
   box-shadow: 1px 1px 5px 3px white;
   transition: box-shadow 300ms ease-in-out;
@@ -294,16 +345,10 @@ h2 {
 .locator {
   margin: 60px 0;
 }
-
 .follow-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 60px 0;
-}
-.follow {
-  font-size: 1.5rem;
-  color: #325b46;
 }
 .follow-menu .logo {
   margin: 0;
@@ -325,7 +370,8 @@ h2 {
     =================================================  */
 
 .footer {
-  padding: 1.7rem 0;
+  padding: 1rem 0;
+  color: white;
 }
 .foot-nav-bar {
   float: right;
@@ -359,9 +405,7 @@ h2 {
     .fa-bars{
       display: block;
     }
-    #toggle{
-      display: block;
-    }
+  
     .nav-bar > input[type="checkbox"]:checked ~ .menu-list{
       display: block;
     }
@@ -369,8 +413,14 @@ h2 {
       display: block;
       width: 200px;
       padding: 8px;
-      background: #39a366;
+      background: #54437a96;
       border-bottom: .5px solid white;
+    }
+    .menu-list {
+      margin-top: 30px;
+      position: absolute;
+      right: 0;
+      z-index: 2;
     }
 }
 
@@ -395,6 +445,17 @@ h2 {
   }
   .follow-menu {
     grid-gap : 30px;
+  }
+  .home-data {
+    max-width: 400px;
+    width: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .home-user-name {
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
   }
 }
 
