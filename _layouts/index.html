@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
-		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<title>Home Page</title>
+		<meta name="description" content="Home page of portfolio">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="assets/custom.css">
 	</head>
 	<body>
 
     <!-- START HEADER -->
-		<header class="header">
+		<header class="header home-header">
 			<div class="container">
-				<span class="header-user-name">Komal Raj</span>
 				<nav class="nav-bar">
-          <i class="fa fa-bars" for="toggle"></i>
+          <label for="toggle">
+						<i class="fa fa-bars"></i>
+					</label>
 					<input type="checkbox" id="toggle" />
 					<ul class="menu-list">
-						<li><a href="index.html">home</a></li>
+						<li><a href="index.html" id="active">home</a></li>
 						<li><a href="about.html">about me</a></li>
 						<li><a href="work.html">work</a></li>
 						<li><a href="blog.html">blog</a></li>
@@ -26,41 +30,24 @@
 		</header>
 
     <!-- START MAIN SECTION -->
-		<main>
-			<section class="home-main"></section>
-			<section class="container">
-				<div class="home-logos">
-							<div class="logo-item"><a href="about.html">
-								<i class="fas fa-user logo"></i>
-							</a>
-              <p class="logo-name"><a href="about.html">About Me</a></p>
-              </div>
-							<div class="logo-item"><a href="work.html">
-								<i class="fas fa-paint-brush logo"></i>
-							</a>
-              <p class="logo-name"><a href="work.html">Work</a></p>
-              </div>
-							<div class="logo-item"><a href="blog.html">
-								<i class="fab fa-blogger-b logo"></i>
-							</a>
-              <p class="logo-name"><a href="blog.html">Blogs</a></p>
-              </div>
-							<div class="logo-item"><a href="contact.html">
-								<i class="fas fa-at logo"></i>
-							</a>
-              <p class="logo-name"><a href="contact.html">Contact</a></p>
-              </div>
+		<main class="bg-img">
+			<section class="home-hero">
+				<div class="home-data">
+					<span class="home-user-name">Komal Raj</span>
+					<p class="home-para">I'm web devloper and focused on crafting clean  & user‑friendly experiences.</p>
 				</div>
+				<section class="container">
+				</section>
 			</section>
 		</main>
 
     <!-- START FOOTER -->
 		<footer class="footer">
-		<div class="container">
-			<span>
-				<small>&copy; 2018 by komat raj</small>
-			</span>
-		</div>
-	</footer>
+			<div class="container">
+				<span>
+					<small>&copy; 2018 by komal raj</small>
+				</span>
+			</div>
+		</footer>
 	</body>
 </html>
