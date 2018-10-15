@@ -13,17 +13,16 @@ var mouse = {
 var maxRadius = 20;
 
 window.addEventListener('resize', function() {
-		canvas.width = window.innerWidth;
-		canvas.height = window.innerHeight;
-		init();
-	});
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	init();
+});
 
 window.addEventListener('mousemove',
-			function(event) {
-				mouse.x = event.x;
-				mouse.y = event.y;
-
-			});
+	function(event) {
+		mouse.x = event.x;
+		mouse.y = event.y;
+	});
 
 var colorArray = [
 		'#ffaa33',
