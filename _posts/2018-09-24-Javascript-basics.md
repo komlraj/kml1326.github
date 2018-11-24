@@ -14,7 +14,7 @@ It has the procedural capability
 Easy to debugging and testing
 Platform independence
 
-Writing JavaScript into HTML:-
+#Writing JavaScript into HTML:-
 JavaScript syntax is embedded into an HTML file. The browser takes this information using the HTML tag script. The <script> marks the beginning of a scripting code and </script> marks the end of the scripting code.
 <script  type="text/javascript">
 (Body)
