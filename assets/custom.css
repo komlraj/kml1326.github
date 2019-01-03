@@ -288,7 +288,14 @@ h2 {
     =================================================  */
 
 .blog {
-  height: 72.5vh;
+  min-height: 72.5vh;
+}
+.blog-list {
+  padding: 10px;
+  border-bottom:1px solid #201E1E;
+}
+.blog-link {
+  font-size: 2rem;
 }
 
 /*  =================================================
