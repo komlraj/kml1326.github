@@ -19,7 +19,8 @@ categories: nodejs
 ### Step 1 — **Import HTTP Module**
 ### We use the require directive to load the HTTP module and store the returned HTTP instance into an http variable as follows. Also, set the hostname and port. here IP address ‘127.0.0.1’ means localhost −
 
-``` var http = require("http");
+```
+var http = require("http");
 const hostname = '127.0.0.1';
 const port = 8000;
 ```
@@ -27,7 +28,8 @@ const port = 8000;
 ### Step 2 — **Create Server**
 ### We use the created HTTP instance and call HTTP.createServer() method to create a server instance. Pass it a function with two parameters. createServer() method takes a callback function as a second argument. This callback function is executed each time the server receives a new request. The callback function takes two arguments, request, and response. The request object contains information regarding the client’s request, such as the URL, HTTP headers, and much more. Similarly, the response object is used to return data back to the client.
 
-```const server = http.createServer();
+```
+const server = http.createServer();
 server.on('request', (request, res) => {
 res.statusCode = 200;
 res.setHeader('Content-Type', 'text/plain');
@@ -38,7 +40,8 @@ res.end('Hello World!\n');
 ### Step 3 — ***listening to the server —***
 ### Then we bind it at port 8000 using the listen method associated with the server instance. In listen() method we pass two arguments, first is port and second is callback function. use the console.log in callback function for showing a message in terminal. because sometimes run more than one server then maybe we confused which server is running so showing console message clear this confusion.
 
-```server.listen(port, hostname, () => {
+```
+server.listen(port, hostname, () => {
 console.log(`Server running at http://${hostname}:${port}/`);
 });
 ```

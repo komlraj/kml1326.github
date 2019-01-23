@@ -8,7 +8,23 @@
 <body>
 
   <!-- START HEADER -->
-  {% include header.html %}
+  <header class="header home-header">
+    <div class="container">
+      <nav class="nav-bar">
+        <label for="toggle">
+          <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" id="toggle" />
+        <ul class="menu-list">
+          <li><a href="/">home</a></li>
+          <li><a href="/about">about me</a></li>
+          <li><a href="/work">work</a></li>
+          <li><a href="/blog">blog</a></li>
+          <li><a href="/contact" id="active">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <!-- MAIN SECTION -->
 	<main class="container">
